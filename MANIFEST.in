@@ -1,0 +1,3 @@
+recursive-include aldryn_forms_friendlycaptcha_plugin *.py *.html
+include setup.py
+include setup.cfg
