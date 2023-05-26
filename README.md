@@ -14,8 +14,11 @@ INSTALLED_APPS = [
     'friendly_captcha'
     'aldryn_forms_friendlycaptcha_plugin',
 ]
-FRIENDLY_CAPTCHA_SITE_KEY = env('FRIENDLY_CAPTCHA_SITE_KEY', '123')
-FRIENDLY_CAPTCHA_API_SECRET = env('FRIENDLY_CAPTCHA_API_SECRET', '123')
+
+FRC_CAPTCHA_SECRET = env('FRC_CAPTCHA_SECRET', '123')
+FRC_CAPTCHA_SITE_KEY = env('FRC_CAPTCHA_SITE_KEY', '123')
+
+FRC_CAPTCHA_VERIFICATION_URL = env('FRC_CAPTCHA_VERIFICATION_URL', 'https://api.friendlycaptcha.com/api/v1/siteverify')
 ```
 
 If you're using bootstrap4, beware that django renders the form errors with class `invalid-feedback`, which is invisible in bs4.
