@@ -22,7 +22,7 @@ class FriendlyCaptchaWidget(Widget):
             settings, 'FRC_WIDGET_MODULE_JS',
             'https://unpkg.com/friendly-challenge@0.9.11/widget.module.min.js',
         )
-        self.frc_widget_js = (
+        self.frc_widget_js = getattr(
             settings, 'FRC_WIDGET_JS',
             'https://unpkg.com/friendly-challenge@0.9.11/widget.min.js'
         )
